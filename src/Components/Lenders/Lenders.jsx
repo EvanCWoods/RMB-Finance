@@ -87,7 +87,7 @@ const Lenders = () => {
         }}
       >
         {imageList.map((image) => (
-          <ImageContainer image={image} />
+          <ImageContainer image={image} key={image}/>
         ))}
       </Box>
     </Box>

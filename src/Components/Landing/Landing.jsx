@@ -2,6 +2,7 @@ import { Box, Typography, Grid } from "@mui/material";
 import landingHouse from "../../Assets/Images/landing-house.png";
 import TailoredFinancialSolutions from "../TailoredFinancialSolutions/TailoredFinancialSolutions";
 import Lenders from "../Lenders/Lenders";
+import Contact from "../Contact/Contact";
 
 const Landing = () => {
   return (
@@ -33,6 +34,7 @@ const Landing = () => {
       </Box>
       <TailoredFinancialSolutions />
       <Lenders />
+      <Contact />
     </Box>
   );
 };
