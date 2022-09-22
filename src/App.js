@@ -1,11 +1,9 @@
-import Landing from "./Components/Landing/Landing.js";
-import Header from "./Components/Header/Header.js";
 import "./Assets/Styles/root.css";
+import Landing from "./Components/Landing/Landing";
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <Landing />
     </div>
   );
