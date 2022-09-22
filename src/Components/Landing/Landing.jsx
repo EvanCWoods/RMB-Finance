@@ -1,10 +1,12 @@
 import { Box, Typography, Grid } from "@mui/material";
 import landingHouse from "../../Assets/Images/landing-house.png";
+import TailoredFinancialSolutions from "../TailoredFinancialSolutions/TailoredFinancialSolutions";
+import Lenders from "../Lenders/Lenders";
 
 const Landing = () => {
   return (
     <Box
-      sx={{ width: "100%", height: "100%" }}
+      sx={{ width: "100%", height: "100%"}}
       style={{
         backgroundImage: `url(${landingHouse})`,
         backgroundRepeat: "no-repeat",
@@ -29,6 +31,8 @@ const Landing = () => {
           </Grid>
         </Grid>
       </Box>
+      <TailoredFinancialSolutions />
+      <Lenders />
     </Box>
   );
 };
