@@ -38,7 +38,7 @@ const Contact = () => {
             <Paper elevation={2} sx={{ pb: "30px" }}>
               <Grid container spacing={1} sx={{ px: "5%" }}>
                 <Typography variant="h4" sx={{ mt: "2%" }}>
-                  Enter your personal information
+                  Contact Us
                 </Typography>
                 <TextInputField
                   displayName="First Name"
