@@ -3,6 +3,7 @@ import landingHouse from "../../Assets/Images/landing-house.png";
 import TailoredFinancialSolutions from "../TailoredFinancialSolutions/TailoredFinancialSolutions";
 import Lenders from "../Lenders/Lenders";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 
 const Landing = () => {
   return (
@@ -35,6 +36,7 @@ const Landing = () => {
       <TailoredFinancialSolutions />
       <Lenders />
       <Contact />
+      <Footer />
     </Box>
   );
 };

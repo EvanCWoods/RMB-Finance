@@ -7,7 +7,7 @@ const validationSchema = Yup.object().shape({
     FirstName: Yup.string().required("Required"),
     LastName: Yup.string().required("Required"),
     Email: Yup.string().required("Required"),
-    Subject: Yup.string().required("Required"),
+    Phone: Yup.string().required("Required"),
     Message: Yup.string().required("Required"),
 })
 
@@ -22,7 +22,7 @@ const Contact = () => {
         FirstName: "",
         LastName: "",
         Email: "",
-        Subject: "",
+        Phone: "",
         Message: "",
     }}
     validationSchema={validationSchema}
@@ -37,7 +37,7 @@ const Contact = () => {
           <Grid item xs={10} md={6}>
             <Paper elevation={2} sx={{ pb: "30px" }}>
               <Grid container spacing={1} sx={{ px: "5%" }}>
-                <Typography variant="h4" sx={{ mt: "2%" }}>
+                <Typography variant="h4" sx={{ mt: "2%", width: "100%"}}>
                   Contact Us
                 </Typography>
                 <TextInputField
@@ -59,8 +59,8 @@ const Contact = () => {
                   size={6}
                 />
                 <TextInputField
-                  displayName="Subject"
-                  fieldName="Subject"
+                  displayName="Phone number"
+                  fieldName="Phone"
                   size={6}
                 />
                 <TextInputField
