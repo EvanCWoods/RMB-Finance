@@ -1,6 +1,4 @@
 import { Grid } from "@mui/material";
-import ServicesInformationText from "./ServicesInformationText";
-import ServicesInformationImage from "./ServicesInformationImage";
 import ServicesInformationCard from "./ServicesInformationCard";
 import FirstTimeBuyers from "../../../Assets/Images/first-time-buyers.webp";
 import Investing from "../../../Assets/Images/investing.jpeg";
@@ -31,18 +29,12 @@ home ownership."
       />
       <ServicesInformationCard
         title="Refinancing"
-        content="We understand entering the property market for the first time is daunting and
-overwhelming. We will be with you every step of the way from working out how
-much you can borrow to selecting government schemes to achieve your goals of
-home ownership."
+        content="With interest rate changes it’s possible that the loan product you started with may not be as competitive as it used to be. You could potentially save thousands of dollars refinancing your loan. Our team can assist in consolidating your personal loans, credit cards and other debts into one loan. Reach out to our team to arrange a loan review to potentially save you thousands."
         image={Refinancing}
       />
       <ServicesInformationCard
         title="Peresonal &amp; Business Finance"
-        content="We understand entering the property market for the first time is daunting and
-overwhelming. We will be with you every step of the way from working out how
-much you can borrow to selecting government schemes to achieve your goals of
-home ownership."
+        content="There is a myriad of factors that will impact the loan. Which is why it’s important to have someone guide you through the process to achieve your personal and business goals."
         image={PersonalAndBusiness}
       />
     </Grid>

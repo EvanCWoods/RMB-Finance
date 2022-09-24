@@ -12,7 +12,13 @@ const validationSchema = Yup.object().shape({
 })
 
 const handleSubmit = (values) => {
-    console.log(values)
+    fetch("/", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values)
+    });
 }
 
 const Contact = () => {
