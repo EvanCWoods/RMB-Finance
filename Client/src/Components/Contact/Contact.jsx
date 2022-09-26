@@ -11,14 +11,17 @@ const validationSchema = Yup.object().shape({
     Message: Yup.string().required("Required"),
 })
 
-const handleSubmit = (values) => {
-    fetch("/", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(values)
+const handleSubmit = async (values) => {
+    const response = await fetch("/", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
     });
+    const json = await response.json();
+    return await json;
 }
 
 const Contact = () => {
