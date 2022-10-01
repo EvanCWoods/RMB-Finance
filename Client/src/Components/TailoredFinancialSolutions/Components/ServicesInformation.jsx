@@ -33,7 +33,7 @@ home ownership."
         image={Refinancing}
       />
       <ServicesInformationCard
-        title="Peresonal &amp; Business Finance"
+        title="Personal &amp; Business Finance"
         content="There is a myriad of factors that will impact the loan. Which is why it’s important to have someone guide you through the process to achieve your personal and business goals."
         image={PersonalAndBusiness}
       />

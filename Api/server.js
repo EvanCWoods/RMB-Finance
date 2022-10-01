@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const nodemailer = require("nodemailer");
+const { getMaxListeners } = require("process");
 require("dotenv").config();
 
 const app = express();
@@ -12,19 +13,20 @@ app.use(express.json());
 //   res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
 // });
 
-app.post("/", (req, res) => {
+app.post("/", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: process.env.email,
-      pass: process.env.password + "#",
+      pass: process.env.password,
     },
   });
 
   console.log(transporter);
+  console.log(req.body);
 
   const mailOptions = {
-    from: req.body.Email,
+    from: "evan.woods.dev@gmail.com",
     to: "evan.woods.dev@gmail.com",
     subject: `Enquiry from ${req.body.FirstName} ${req.body.LastName}`,
     text: req.body.Message,
@@ -32,7 +34,7 @@ app.post("/", (req, res) => {
 
   console.log(mailOptions);
 
-  transporter.sendMail(mailOptions, (err, info) => {
+  const response = await transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       res.send(err);
     } else {
@@ -40,6 +42,7 @@ app.post("/", (req, res) => {
       res.send("Success");
     }
   });
+  console.log(response);
 });
 
 app.listen(PORT, () => {
