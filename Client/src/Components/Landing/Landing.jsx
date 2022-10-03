@@ -29,12 +29,14 @@ const Landing = () => {
           </Grid>
           <Grid item xs={0} md={5} lg={6}></Grid>
           <Grid item xs={6} md={3} lg={3} sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+            <a href="#contact-form">
             <Typography
               variant="subtitle1"
               sx={{ display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer", color: "#BB9D63"}}
             >
               Contact Us
             </Typography>
+              </a>
           </Grid>
         </Grid>
       </Box>

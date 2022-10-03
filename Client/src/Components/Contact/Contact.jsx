@@ -44,7 +44,7 @@ const Contact = () => {
         <Grid container sx={{ mb: "100px" }}>
           <Grid item xs={1} md={3}></Grid>
           <Grid item xs={10} md={6}>
-            <Paper elevation={2} sx={{ pb: "30px" }}>
+            <Paper elevation={2} sx={{ pb: "30px" }} id="contact-form">
               <Grid container spacing={1} sx={{ px: "5%" }}>
                 <Typography variant="h4" sx={{ mt: "2%", width: "100%"}}>
                   Contact Us
