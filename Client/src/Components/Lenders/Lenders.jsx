@@ -37,20 +37,15 @@ import image31 from "../../Assets/Images/Lenders/transparent-logo-banksa-340x140
 import image32 from "../../Assets/Images/Lenders/Westpac_logo.svg.png";
 
 const imageList = [
+  image4, image9, image11, image12, image14, image32, image26,
   image1,
   image2,
-  image3,
-  image4,
   image5,
   image6,
   image7,
   image8,
-  image9,
   image10,
-  image11,
-  image12,
   image13,
-  image14,
   image15,
   image16,
   image17,
@@ -62,36 +57,65 @@ const imageList = [
   image23,
   image24,
   image25,
-  image26,
   image27,
   image28,
   image29,
   image30,
   image31,
-  image32
 ];
 
+const logoLarge = [image4, image9, image11, image12, image14, image32, image26];
+
 const Lenders = () => {
-  return (
-    <Box sx={{ my: "150px" }}>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Typography variant="h4" sx={{mb: "30px"}}>20+ Lenders on our Panel</Typography>
+  let width = window.innerWidth;
+
+  if (width > 768) {
+    return (
+      <Box sx={{ my: "150px" }}>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Typography variant="h4" sx={{ mb: "30px" }}>
+            20+ Lenders on our Panel
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            width: "90%",
+            mx: "5%",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          {imageList.map((image) => (
+            <ImageContainer image={image} key={image} size="40px" />
+          ))}
+        </Box>
       </Box>
-      <Box
-        sx={{
-          width: "90%",
-          mx: "5%",
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
-        {imageList.map((image) => (
-          <ImageContainer image={image} key={image}/>
-        ))}
+    );
+  } else {
+    return (
+      <Box sx={{ my: "150px" }}>
+        <Box sx={{ textAlign: "center" }}>
+          <Typography variant="h4" sx={{ mb: "30px" }}>
+            20+ Lenders on our Panel
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            width: "90%",
+            mx: "5%",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          {logoLarge.map((image) => (
+            <ImageContainer image={image} key={image} size="40px" />
+          ))}
+        </Box>
       </Box>
-    </Box>
-  );
+    );
+  }
 };
 
 export default Lenders;

@@ -4,49 +4,48 @@ import * as Yup from "yup";
 import TextInputField from "./Components/TextInputField";
 
 const validationSchema = Yup.object().shape({
-    FirstName: Yup.string().required("Required"),
-    LastName: Yup.string().required("Required"),
-    Email: Yup.string().required("Required"),
-    Phone: Yup.string().required("Required"),
-    Message: Yup.string().required("Required"),
-})
+  FirstName: Yup.string().required("Required"),
+  LastName: Yup.string().required("Required"),
+  Email: Yup.string().required("Required"),
+  Phone: Yup.string().required("Required"),
+  Message: Yup.string().required("Required"),
+});
 
 const handleSubmit = async (values) => {
-    const response = await fetch("/", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    });
-    const json = await response.json();
-    return await json;
-}
+  const response = await fetch("/", {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(values),
+  });
+  const json = await response.json();
+  return await json;
+};
 
 const Contact = () => {
   return (
     <Formik
-    initialValues={{
+      initialValues={{
         FirstName: "",
         LastName: "",
         Email: "",
         Phone: "",
         Message: "",
-    }}
-    validationSchema={validationSchema}
-    onSubmit={(values) => {
-        console.log("submit");
+      }}
+      validationSchema={validationSchema}
+      onSubmit={(values) => {
         handleSubmit(values);
-    }}
-    >
+      }}
+      >
       <Form>
         <Grid container sx={{ mb: "100px" }}>
           <Grid item xs={1} md={3}></Grid>
           <Grid item xs={10} md={6}>
             <Paper elevation={2} sx={{ pb: "30px" }} id="contact-form">
               <Grid container spacing={1} sx={{ px: "5%" }}>
-                <Typography variant="h4" sx={{ mt: "2%", width: "100%"}}>
+                <Typography variant="h4" sx={{ mt: "2%", width: "100%" }}>
                   Contact Us
                 </Typography>
                 <TextInputField
@@ -73,7 +72,7 @@ const Contact = () => {
                   size={6}
                 />
                 <TextInputField
-                  displayName="Message"
+                  displayName="Tell us About Your Financial Goals"
                   fieldName="Message"
                   size={12}
                   mutliline={true}
@@ -86,7 +85,12 @@ const Contact = () => {
                   xs={2}
                   sx={{ display: "flex", justifyContent: "center", mt: "15px" }}
                 >
-                  <Button variant="contained" type="submit">Send</Button>
+                  <Button
+                    variant="contained"
+                    type="submit"
+                  >
+                    Send
+                  </Button>
                 </Grid>
               </Grid>
             </Paper>
