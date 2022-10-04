@@ -27,7 +27,7 @@ app.post("/", async (req, res) => {
 
   const mailOptions = {
     from: "evan.woods.dev@gmail.com",
-    to: "ryan@rmb-finance.com.au",
+    to: "rmbmailer@gmail.com",
     subject: `Enquiry from ${req.body.FirstName} ${req.body.LastName}`,
     text: req.body.Message,
   };

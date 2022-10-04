@@ -1,7 +1,20 @@
-import { Grid, Divider, Typography, Paper, Button } from "@mui/material";
+import { Grid, Divider, Typography, Paper, Button, Modal, Box } from "@mui/material";
 import { Formik, Form } from "formik";
+import { useState } from "react";
 import * as Yup from "yup";
 import TextInputField from "./Components/TextInputField";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  height: 100,
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  borderRadius: "20px",
+};
 
 const validationSchema = Yup.object().shape({
   FirstName: Yup.string().required("Required"),
@@ -11,7 +24,7 @@ const validationSchema = Yup.object().shape({
   Message: Yup.string().required("Required"),
 });
 
-const handleSubmit = async (values) => {
+const handleSubmit = async (values, setOpen) => {
   const response = await fetch("/", {
     method: "POST",
     mode: "cors",
@@ -25,7 +38,14 @@ const handleSubmit = async (values) => {
 };
 
 const Contact = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  }
+
   return (
+    <>
     <Formik
       initialValues={{
         FirstName: "",
@@ -37,6 +57,7 @@ const Contact = () => {
       validationSchema={validationSchema}
       onSubmit={(values) => {
         handleSubmit(values);
+        setOpen(true);
       }}
       >
       <Form>
@@ -99,6 +120,13 @@ const Contact = () => {
         </Grid>
       </Form>
     </Formik>
+    <Modal open={open} onClose={handleClose}>
+      <Box sx={style}>
+        <Typography sx={{display: "flex", justifyContent: "center", pt: "3%"}}>Thanks! We'll get back to you soon.</Typography>
+        <Button variant="contained" size="small" sx={{ml: "80%", mt: "5%"}} onClick={handleClose}>Close</Button>
+      </Box>
+    </Modal>
+    </>
   );
 };
 
