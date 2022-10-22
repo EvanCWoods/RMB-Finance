@@ -1,11 +1,11 @@
 {
-    "name": "evan-woods-portfolio",
+    "name": "RMB-Finance",
     "version": "1.0.0",
     "description": "This repository contains the code for my personal portfolio website. It was built using standard HTML, CSS, and JavaScript. It follows responsive design standards and demonstrates the projects that I have built, along with the skills I have accuired in my programming carreer.",
     "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon server.js"
+        "start": "node server.js"
     },
     "repository": {
         "type": "git",
