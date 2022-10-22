@@ -9,11 +9,16 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "client/build")));
-app.use(express.json());
-
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
-// });
+app.use(
+  express.json({
+    verify: (req, res, buf) => {
+      req.rawBody = buf;
+    },
+  })
+  );
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
+});
 
 app.post("/", async (req, res) => {
   const transporter = nodemailer.createTransport({
