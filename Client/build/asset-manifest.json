@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6edad92c.css",
+    "main.js": "/static/js/main.fc3e904f.js",
+    "static/media/landing-house.png": "/static/media/landing-house.3246e5b9bda076de2415.png",
+    "static/media/9107ea68.jpeg": "/static/media/38d35182db3e3ad5b996717f262aa0f39107ea68.90f1aa2e7ac819a36170.jpeg",
+    "static/media/Favicon Transparent.ico": "/static/media/Favicon Transparent.5d47f41f02dc014d3926.ico",
+    "static/media/Transparent Logo.png": "/static/media/Transparent Logo.39f69e088e69ab3f4311.png",
+    "static/media/Bankwest_logo.png": "/static/media/Bankwest_logo.1f6e2714dca454a8077c.png",
+    "static/media/2560px-Virgin_Money_logo.svg.png": "/static/media/2560px-Virgin_Money_logo.svg.a88a00fc40d44fdf64ec.png",
+    "static/media/first-time-buyers.webp": "/static/media/first-time-buyers.724c473cb25f18a8c3d3.webp",
+    "static/media/personal-business.webp": "/static/media/personal-business.482d72da5cad13553115.webp",
+    "static/media/Paramount-Logo-mortgage-transparent_retina.png": "/static/media/Paramount-Logo-mortgage-transparent_retina.f314353c6e2db42e6fab.png",
+    "static/media/NOW FINANCE.png": "/static/media/NOW FINANCE.c2387a880c820c5ebce4.png",
+    "static/media/refinancing.jpeg": "/static/media/refinancing.dc0b7f65a96e902ab763.jpeg",
+    "static/media/Bank_of_Queensland_Limited.png": "/static/media/Bank_of_Queensland_Limited.e598f18b2ae25fe9c12c.png",
+    "static/media/ING_Group_N.V._Logo.svg.png": "/static/media/ING_Group_N.V._Logo.svg.6404dfc85e9519b302ba.png",
+    "static/media/Citibank.svg.png": "/static/media/Citibank.svg.1a5ec5879e66576c4db9.png",
+    "static/media/ANZ_Digital_Flat_blue.png": "/static/media/ANZ_Digital_Flat_blue.2ed708f94e1d62b44b64.png",
+    "static/media/Westpac_logo.svg.png": "/static/media/Westpac_logo.svg.04f9b777821dfbe36161.png",
+    "static/media/NAB-National-Australia-Bank-logo.png": "/static/media/NAB-National-Australia-Bank-logo.053bef1d6db0ca2ec3bd.png",
+    "static/media/MKM-Capital.jpeg": "/static/media/MKM-Capital.b15d0d2beeb2ac4a8462.jpeg",
+    "static/media/hpblogodesktop.png": "/static/media/hpblogodesktop.277514aa64c896715c19.png",
+    "static/media/GSB_Logo_horizontal_RGB.png": "/static/media/GSB_Logo_horizontal_RGB.e30bbce29f5ad11daa3e.png",
+    "static/media/2560px-Macquarie_Group_logo.svg.png": "/static/media/2560px-Macquarie_Group_logo.svg.cb951b531fd41e066868.png",
+    "static/media/Pepper_Money.png": "/static/media/Pepper_Money.9d8f855a963719a200a6.png",
+    "static/media/0271_png": "/static/media/0271_637659923180779607.4e64af144f6bb2ea432a.png",
+    "static/media/Screen Shot 2022-09-26 at 9.08.09 pm.png": "/static/media/Screen Shot 2022-09-26 at 9.08.09 pm.50c948c2bedb45fad79a.png",
+    "static/media/1601876083229.jpeg": "/static/media/1601876083229.5f716affa3f3b192f927.jpeg",
+    "static/media/Hejaz-Logo-450x259.png": "/static/media/Hejaz-Logo-450x259.70968ab329b47046c80e.png",
+    "static/media/a.png": "/static/media/a.d0f1558e203c266c1d08.png",
+    "static/media/6b8d75f0-bcca-11ea-86d1-e52bae5cc086.png": "/static/media/6b8d75f0-bcca-11ea-86d1-e52bae5cc086.398d1b4c4b38597aa6d8.png",
+    "index.html": "/index.html",
+    "main.6edad92c.css.map": "/static/css/main.6edad92c.css.map",
+    "main.fc3e904f.js.map": "/static/js/main.fc3e904f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6edad92c.css",
+    "static/js/main.fc3e904f.js"
+  ]
+}
