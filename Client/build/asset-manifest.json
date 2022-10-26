@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6edad92c.css",
-    "main.js": "/static/js/main.fc3e904f.js",
+    "main.js": "/static/js/main.75a33f23.js",
     "static/media/landing-house.png": "/static/media/landing-house.3246e5b9bda076de2415.png",
     "static/media/9107ea68.jpeg": "/static/media/38d35182db3e3ad5b996717f262aa0f39107ea68.90f1aa2e7ac819a36170.jpeg",
     "static/media/Favicon Transparent.ico": "/static/media/Favicon Transparent.5d47f41f02dc014d3926.ico",
@@ -32,10 +32,10 @@
     "static/media/6b8d75f0-bcca-11ea-86d1-e52bae5cc086.png": "/static/media/6b8d75f0-bcca-11ea-86d1-e52bae5cc086.398d1b4c4b38597aa6d8.png",
     "index.html": "/index.html",
     "main.6edad92c.css.map": "/static/css/main.6edad92c.css.map",
-    "main.fc3e904f.js.map": "/static/js/main.fc3e904f.js.map"
+    "main.75a33f23.js.map": "/static/js/main.75a33f23.js.map"
   },
   "entrypoints": [
     "static/css/main.6edad92c.css",
-    "static/js/main.fc3e904f.js"
+    "static/js/main.75a33f23.js"
   ]
 }
