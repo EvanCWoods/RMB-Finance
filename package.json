@@ -1,13 +1,12 @@
 {
-    "name": "final-project",
+    "name": "RMB-Finance",
     "version": "1.0.0",
     "description": "",
-    "main": "backend/server.js",
+    "main": "Api/server.js",
     "scripts": {
         "start": "node Api/server.js",
         "develop": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
         "install": "cd Api && npm i && cd ../Client && npm i",
-        "seed": "cd Api && npm run seed",
         "build": "cd Client && npm run build"
     },
     "keywords": [],
