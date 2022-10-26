@@ -4,7 +4,7 @@
     "description": "",
     "main": "Api/server.js",
     "scripts": {
-        "start": "node Api/server.js",
+        "start": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
         "develop": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
         "install": "cd Api && npm i && cd ../Client && npm i",
         "build": "cd Client && npm run build"
