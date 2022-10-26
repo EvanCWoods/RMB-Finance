@@ -2,11 +2,11 @@
     "name": "RMB-Finance",
     "version": "1.0.0",
     "description": "",
-    "main": "Api/server.js",
+    "main": "server.js",
     "scripts": {
-        "start": "node Api/server.js",
-        "develop": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
-        "install": "cd Api && npm i && cd ../Client && npm i",
+        "start": "node server.js",
+        "develop": "concurrently \"npm run start\" \"cd Client && npm start\"",
+        "install": "npm i && cd ../Client && npm i",
         "build": "cd Client && npm run build"
     },
     "keywords": [],
@@ -19,6 +19,10 @@
         "body-parser": "^1.20.0",
         "cookie-parser": "^1.4.6",
         "react-icons": "^4.4.0",
-        "stripe": "^9.2.0"
+        "stripe": "^9.2.0",
+        "dotenv": "^16.0.2",
+        "express": "^4.17.3",
+        "nodemailer": "^6.7.2",
+        "nodemon": "^2.0.15"
     }
 }
