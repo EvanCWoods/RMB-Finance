@@ -4,11 +4,11 @@
     "description": "",
     "main": "backend/server.js",
     "scripts": {
-        "start": "node backend/server.js",
-        "develop": "concurrently \"cd backend && npm run start\" \"cd client && npm start\"",
-        "install": "cd backend && npm i && cd ../client && npm i",
-        "seed": "cd backend && npm run seed",
-        "build": "cd client && npm run build"
+        "start": "node Api/server.js",
+        "develop": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
+        "install": "cd Api && npm i && cd ../Client && npm i",
+        "seed": "cd Api && npm run seed",
+        "build": "cd Client && npm run build"
     },
     "keywords": [],
     "author": "",
