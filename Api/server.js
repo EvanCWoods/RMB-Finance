@@ -20,9 +20,6 @@ app.use(
 //   app.use(express.static(path.join(__dirname, "../client/build")));
 // }
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/Client/build", "index.html"));
-});
 
 app.post("/", async (req, res) => {
   const transporter = nodemailer.createTransport({
@@ -54,6 +51,11 @@ app.post("/", async (req, res) => {
     }
   });
   console.log(response);
+});
+
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/Client/build", "index.html"));
 });
 
 app.listen(PORT, () => {
