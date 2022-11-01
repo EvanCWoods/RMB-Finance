@@ -15,13 +15,16 @@ app.use(
   })
 );
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
-}
+if (process.env.NODE_ENV === 'production') {
+  // Exprees will serve up production assets
+  app.use(express.static('client/build'));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "Client/build"));
-})
+  // Express serve up index.html file if it doesn't recognize route
+  const path = require('path');
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 
 app.post("/", async (req, res) => {
   const transporter = nodemailer.createTransport({
@@ -32,8 +35,6 @@ app.post("/", async (req, res) => {
     },
   });
 
-  console.log(transporter);
-  console.log(req.body);
 
   const mailOptions = {
     from: "evan.woods.dev@gmail.com",
@@ -42,7 +43,6 @@ app.post("/", async (req, res) => {
     text: req.body.Message,
   };
 
-  console.log(mailOptions);
 
   const response = await transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
@@ -52,13 +52,8 @@ app.post("/", async (req, res) => {
       res.send("Success");
     }
   });
-  console.log(response);
 });
 
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/Client/build", "index.html"));
-});
 
 app.listen(PORT, () => {
   console.log(`Server started on ${PORT}`);
