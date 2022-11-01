@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path");
 const nodemailer = require("nodemailer");
-const { getMaxListeners } = require("process");
 require("dotenv").config();
 
 const app = express();
@@ -14,7 +13,7 @@ app.use(
       req.rawBody = buf;
     },
   })
-  );
+);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static(path.join(__dirname, "../client/build")));
@@ -55,7 +54,8 @@ app.post("/", async (req, res) => {
 
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/Client/build", "index.html"));
+  // res.sendFile(path.join(__dirname, "/Client/build", "index.html"));
+  res.send("Hello");
 });
 
 app.listen(PORT, () => {
