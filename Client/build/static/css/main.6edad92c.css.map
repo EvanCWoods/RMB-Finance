@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.6edad92c.css","mappings":"AAAA,EAGE,qBAAsB,CADtB,QAAS,CADT,SAGF,CAEA,KAEE,WAAY,CADZ,UAEF,CAEA,EACE,oBACF","sources":["Assets/Styles/root.css"],"sourcesContent":["* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\n.App {\n  width: 100%;\n  height: 100%;\n}\n\na {\n  text-decoration: none;\n}\n"],"names":[],"sourceRoot":""}
