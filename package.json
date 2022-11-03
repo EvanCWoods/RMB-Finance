@@ -7,7 +7,7 @@
         "start": "node server.js",
         "develop": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
         "install": "cd Api && npm i && cd ../Client && npm i",
-        "build": "npm run build"
+        "build": "react-scripts build"
     },
     "keywords": [],
     "author": "",
