@@ -2,12 +2,12 @@
     "name": "RMB-Finance",
     "version": "1.0.0",
     "description": "",
-    "main": "Api/server.js",
+    "main": "server.js",
     "scripts": {
-        "start": "node Api/server.js",
+        "start": "node server.js",
         "develop": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
         "install": "cd Api && npm i && cd ../Client && npm i",
-        "build": "cd Client && npm run build"
+        "build": "npm run build"
     },
     "keywords": [],
     "author": "",
@@ -19,6 +19,27 @@
         "body-parser": "^1.20.0",
         "cookie-parser": "^1.4.6",
         "react-icons": "^4.4.0",
-        "stripe": "^9.2.0"
+        "stripe": "^9.2.0",
+        "@emotion/react": "^11.10.4",
+        "@emotion/styled": "^11.10.4",
+        "@mui/material": "^5.10.6",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.2.0",
+        "@testing-library/user-event": "^13.5.0",
+        "bootstrap": "^5.1.3",
+        "concurrently": "^7.4.0",
+        "dotenv": "^16.0.2",
+        "express": "^4.18.1",
+        "formik": "^2.2.9",
+        "grecaptcha": "^1.0.3",
+        "nodemailer": "^6.7.8",
+        "path": "^0.12.7",
+        "react": "^18.1.0",
+        "react-bootstrap": "^2.4.0",
+        "react-dom": "^18.1.0",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4",
+        "yup": "^0.32.11",
+        "nodemon": "^2.0.15"
     }
 }
