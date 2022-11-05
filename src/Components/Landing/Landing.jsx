@@ -24,11 +24,11 @@ const Landing = () => {
               <Typography variant="h4" sx={{ color: "white", display: "flex", justifyContent: "flex-start", alignItems: "center" }}>
                 <img style={{ width: "70px" }} src={RMBIcon} alt="icon" />
               </Typography>
-              <img style={{ height: "30px" }} src={RMBText} alt="icon" />
+              <img style={{ height: "40px" }} src={RMBText} alt="icon" />
             </Box>
           </Grid>
-          <Grid item xs={0} md={5} lg={6}></Grid>
-          <Grid item xs={6} md={3} lg={3} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <Grid item xs={4} md={6} lg={7}></Grid>
+          <Grid item xs={2} md={2} lg={2} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <a href="#contact-form">
               <Typography
                 variant="subtitle1"
