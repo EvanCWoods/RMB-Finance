@@ -10,33 +10,33 @@ import Footer from "../Footer/Footer";
 const Landing = () => {
   return (
     <Box
-      sx={{ width: "100%", height: "100%"}}
+      sx={{ width: "100%", height: "100%", maxWidth: "1900px" }}
       style={{
         backgroundImage: `url(${landingHouse})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
       }}
     >
-      <Box sx={{background: "white"}}>
+      <Box sx={{ background: "white" }}>
         <Grid container>
           <Grid item xs={6} md={4} lg={3}>
-            <Box sx={{display: "flex", alignItems: "center", color: "#BB9D63"}}>
-            <Typography variant="h4" sx={{ color: "white", display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
-              <img style={{width: "70px"}} src={RMBIcon} alt="icon" />
-            </Typography>
-            <img style={{height: "30px"}} src={RMBText} alt="icon"/>
+            <Box sx={{ display: "flex", alignItems: "center", color: "#BB9D63" }}>
+              <Typography variant="h4" sx={{ color: "white", display: "flex", justifyContent: "flex-start", alignItems: "center" }}>
+                <img style={{ width: "70px" }} src={RMBIcon} alt="icon" />
+              </Typography>
+              <img style={{ height: "30px" }} src={RMBText} alt="icon" />
             </Box>
           </Grid>
           <Grid item xs={0} md={5} lg={6}></Grid>
-          <Grid item xs={6} md={3} lg={3} sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <Grid item xs={6} md={3} lg={3} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <a href="#contact-form">
-            <Typography
-              variant="subtitle1"
-              sx={{ display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer", color: "#BB9D63"}}
-            >
-              Contact Us
-            </Typography>
-              </a>
+              <Typography
+                variant="subtitle1"
+                sx={{ display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer", color: "#BB9D63" }}
+              >
+                Contact Us
+              </Typography>
+            </a>
           </Grid>
         </Grid>
       </Box>

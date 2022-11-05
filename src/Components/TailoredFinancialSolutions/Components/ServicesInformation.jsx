@@ -9,7 +9,7 @@ const ServicesInformation = () => {
   return (
     <Grid
       container
-      sx={{ mt: "50px", px: "5%", display: "flex", justifyContent: "center" }}
+      sx={{ px: "5%", display: "flex", justifyContent: "center" }}
     >
       <ServicesInformationCard
         title="First Home Buyer"

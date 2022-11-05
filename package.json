@@ -5,7 +5,7 @@
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
-        "develop": "concurrently \"cd Api && npm run start\" \"cd Client && npm start\"",
+        "develop": "react-scripts start",
         "install": "cd Api && npm i && cd ../Client && npm i",
         "build": "react-scripts build"
     },

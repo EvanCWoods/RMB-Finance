@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'production') {
   // Express serve up index.html file if it doesn't recognize route
   const path = require('path');
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'build/index.html'));
+    res.sendFile(path.resolve(__dirname, '/build/index.html'));
   });
 }
 
@@ -40,7 +40,7 @@ app.post("/", async (req, res) => {
     from: "evan.woods.dev@gmail.com",
     to: "ryan@rmb-finance.com.au",
     subject: `Enquiry from ${req.body.FirstName} ${req.body.LastName}`,
-    text: req.body.Message,
+    text: `${req.body.Message} \n\n Phone: ${req.body.Phone}`,
   };
 
 
